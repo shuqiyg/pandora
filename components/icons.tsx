@@ -1,14 +1,29 @@
 import {
+  FileVolume,
   LucideProps,
   Moon,
   SunMedium,
   Twitter,
+  FileLock2,
+  FileLock,
+  Aperture,
+  Type,
+  Edit3,
+  Layout,
+  MessageCircle,
   type Icon as LucideIcon,
 } from "lucide-react"
 
 export type Icon = LucideIcon
 
 export const Icons = {
+  privacyPolicy: FileLock2,
+  fonts: Type,
+  chat: MessageCircle,
+  screenshot: Aperture,
+  summarize: Layout,
+  filePDF: FileVolume,
+  grammar: Edit3,
   sun: SunMedium,
   moon: Moon,
   twitter: Twitter,
