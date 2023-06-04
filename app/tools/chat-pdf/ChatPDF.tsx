@@ -248,7 +248,7 @@ export function ChatPDF() {
                             <div>
                                 <span className="flex flex-row items-center">
                                     <Bot className="mr-2 h-4 w-4 animate-pulse " />
-                                    The chat is being prepared...
+                                    Chat is coming up...
                                 </span>
                                 <Progress
                                     value={progress}

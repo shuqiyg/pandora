@@ -35,7 +35,8 @@ const createStoreDir = async (chatId: string) => {
 }
 
 const storePath = (chatId: string) => {
-    return path.join(tmpdir(), "damngood.tools", "chat-pdf", chatId)
+    console.log(path.join(tmpdir(), "pandora", "chat-pdf", chatId))
+    return path.join(tmpdir(), "pandora", "chat-pdf", chatId)
 }
 
 function getHoursDiff(a: Date, b: Date): number {
@@ -46,10 +47,10 @@ function getHoursDiff(a: Date, b: Date): number {
 }
 
 export async function removeOutdatedChats() {
-    const ttlHours = 24
+    const ttlHours = 12
     const now = new Date()
 
-    const storageDir = join(tmpdir(), "damngood.tools", "chat-pdf")
+    const storageDir = join(tmpdir(), "pandora", "chat-pdf")
     const files = await fs.readdir(storageDir, { withFileTypes: true })
 
     for (const file of files) {

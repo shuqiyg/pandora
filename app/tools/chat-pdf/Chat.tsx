@@ -52,7 +52,7 @@ export function Chat({ chatId, showPages, onGoToPage}: ChatProps) {
         [
             {
                 message:
-                    "The PDF is processed. You can ask any questions related to it.",
+                    "The PDF is processed. You may start your conversation.",
                 isBot: true,
             },
         ]
@@ -87,7 +87,7 @@ export function Chat({ chatId, showPages, onGoToPage}: ChatProps) {
 
         toast({
             variant: "destructive",
-            title: "Uh oh! Something went wrong.",
+            title: "Sorry. Something went wrong.",
             description: "There was a problem with your request.",
         })
     }
@@ -146,7 +146,7 @@ export function Chat({ chatId, showPages, onGoToPage}: ChatProps) {
                 <Input
                     disabled={processing}
                     type="text"
-                    placeholder="Ask any question"
+                    placeholder="Type your question"
                     onChange={(e) => setQuestion(e.target.value)}
                     value={question}
                 />
