@@ -97,7 +97,7 @@ export function ChatPDF() {
     async function onDocumentLoadSuccess(document) {
         setProgress(0)
         setNumPages(document.numPages)
-        const result = await processDocument(document, () => setProgress(20))
+        const result = await processDocument(document, () => setProgress(30))
         setProgress(100)
         setLoading(false)
         if (result?.success && result.chatId) {
